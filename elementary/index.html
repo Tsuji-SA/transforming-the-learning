@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Transforming the Learning ｜ 小学校教員向け 授業デザインの解像度を上げる</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
+
+  <!-- Custom theme (must come AFTER Reveal's theme) -->
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+  <!-- ================================================================== -->
+  <!-- Part 0  Opening                                                     -->
+  <!-- ================================================================== -->
+
+  <!-- 01: Title -->
+  <section class="title">
+    <span class="eyebrow">For Elementary School Educators · 2026</span>
+    <h1>Transforming<br>the Learning</h1>
+    <p class="subtitle">〜 小学校 ｜ 授業デザインの解像度を上げる 〜</p>
+    <div class="meta">
+      <span>SAMR Model × ICT活用ルーブリック v2</span>
+      <span>Google Workspace · Canva · Gemini · NotebookLM</span>
+    </div>
+  </section>
+
+  <!-- 02: 解像度を上げる -->
+  <section>
+    <div class="page-label">Opening</div>
+    <h2>授業デザインの「解像度」を上げる</h2>
+    <p class="lead" style="font-size:0.85em; color:var(--ink-2); margin-bottom:1em;">
+      これからの小学校授業に求められる10のキーワード。<br>
+      ぼんやりとした目標を、具体的な実践に翻訳する。
+    </p>
+    <div class="grid cols-4" style="gap:10px; font-size:0.6em;">
+      <div class="card tight" style="background:var(--samr-r-soft);"><div class="title">資質・能力の3つの柱</div></div>
+      <div class="card tight" style="background:var(--samr-m-soft);"><div class="title">主体的・対話的で深い学び</div></div>
+      <div class="card tight" style="background:var(--samr-a-soft);"><div class="title">協働的な学び</div></div>
+      <div class="card tight" style="background:var(--samr-s-soft);"><div class="title">GIGA端末の日常使い</div></div>
+      <div class="card tight" style="background:var(--samr-a-soft);"><div class="title">学習者中心の学び</div></div>
+      <div class="card tight" style="background:var(--samr-m-soft);"><div class="title">教科横断・カリキュラム・マネジメント</div></div>
+      <div class="card tight" style="background:var(--samr-r-soft);"><div class="title">学級経営との一体化</div></div>
+      <div class="card tight" style="background:var(--samr-s-soft);"><div class="title">情報活用能力</div></div>
+      <div class="card tight" style="background:var(--samr-m-soft);"><div class="title">生成AIの安全な活用</div></div>
+      <div class="card tight" style="background:var(--samr-r-soft);"><div class="title">個別最適な学び</div></div>
+    </div>
+    <p style="margin-top:1.4em; font-size:0.7em; color:var(--ink-3);">
+      → 一つひとつを「自分の学級の言葉」に置き換えられるか？
+    </p>
+  </section>
+
+  <!-- 03: 小学校の文脈 -->
+  <section>
+    <div class="page-label">Context · 小学校という現場</div>
+    <h2>小学校だからこそ、効く3つの軸</h2>
+    <div class="grid cols-3" style="margin-top:0.4em;">
+      <div class="card">
+        <div class="title">学級担任制 × 教科横断</div>
+        <div class="desc">同じ児童を1日見るからこそ、<strong>教科を越えて学びを編む</strong>ことができる。ICTは横断的な記録と発信の道具。</div>
+      </div>
+      <div class="card">
+        <div class="title">発達段階という設計軸</div>
+        <div class="desc">低学年は<strong>感覚で触る</strong>、中学年は<strong>使い分ける</strong>、高学年は<strong>使いこなす</strong>。同じツールでも段階で意味が変わる。</div>
+      </div>
+      <div class="card">
+        <div class="title">GIGA端末の「日常使い」</div>
+        <div class="desc">「特別な日」ではなく <strong>朝の会・休み時間・宿題</strong> でも端末がある状態へ。学級経営の道具として埋め込む。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: アジェンダ -->
+  <section>
+    <div class="page-label">Agenda · 本日の流れ</div>
+    <h2>研修の6パート</h2>
+    <div class="grid cols-3" style="margin-top:0.4em;">
+      <div class="card">
+        <div class="title">1. SAMRモデルの基礎</div>
+        <div class="desc">4段階のスペクトル／教師の役割／チェックポイント</div>
+      </div>
+      <div class="card">
+        <div class="title">2. 授業デザインの考え方</div>
+        <div class="desc">資質・能力起点／問い／バックワードデザイン／Bloom</div>
+      </div>
+      <div class="card">
+        <div class="title">3. ICT活用ルーブリック v2</div>
+        <div class="desc">5段階×8観点で自己診断する（発達段階別）</div>
+      </div>
+      <div class="card">
+        <div class="title">4. ツール俯瞰</div>
+        <div class="desc">Google Workspace · Canva · Gemini · NotebookLM</div>
+      </div>
+      <div class="card">
+        <div class="title">5. 教科別実践</div>
+        <div class="desc">小学校 13カテゴリのSAMR各段階の具体例</div>
+      </div>
+      <div class="card">
+        <div class="title">6. 明日から</div>
+        <div class="desc">スモールステップ／持ち帰り／参考資料</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 1  SAMRモデルの基礎                                            -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 1</span>
+    <h2>SAMRモデル<br>の基礎</h2>
+    <p class="lead">テクノロジー統合の深度を測るフレームワーク。<br>「階段」ではなく「スペクトル」として捉える。</p>
+  </section>
+
+  <!-- 05: SAMRとは -->
+  <section>
+    <div class="page-label">The SAMR Model</div>
+    <h2>4つの段階で授業の「変化の深さ」を測る</h2>
+    <div class="samr-stack" style="margin-top:0.4em;">
+      <div class="samr-row r">
+        <div class="badge">R</div>
+        <div>
+          <div class="label-jp">再定義 <span style="font-weight:500; font-size:0.65em; color:var(--ink-3);">Redefinition</span></div>
+          <div class="desc">ICTがなければ不可能だった学びを実現し、教室の外と接続する段階。新たな価値創造へ。</div>
+        </div>
+        <div class="tag">変革 / 質的</div>
+      </div>
+      <div class="samr-row m">
+        <div class="badge">M</div>
+        <div>
+          <div class="label-jp">変容 <span style="font-weight:500; font-size:0.65em; color:var(--ink-3);">Modification</span></div>
+          <div class="desc">ICT活用が児童の主体性を引き出し、授業デザインそのものが変容。個別最適・協働的な学びへ。</div>
+        </div>
+        <div class="tag">変革 / 質的</div>
+      </div>
+      <div class="samr-row a">
+        <div class="badge">A</div>
+        <div>
+          <div class="label-jp">増強 <span style="font-weight:500; font-size:0.65em; color:var(--ink-3);">Augmentation</span></div>
+          <div class="desc">「デジタルならでは」の特性を生かして学習効果を向上。従来授業に付加価値が生まれる。</div>
+        </div>
+        <div class="tag">強化 / 量的</div>
+      </div>
+      <div class="samr-row s">
+        <div class="badge">S</div>
+        <div>
+          <div class="label-jp">代替 <span style="font-weight:500; font-size:0.65em; color:var(--ink-3);">Substitution</span></div>
+          <div class="desc">アナログでやってきたことをデジタルに置き換える段階。学習活動自体に大きな変化はない。</div>
+        </div>
+        <div class="tag">強化 / 量的</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06: 教師の役割 -->
+  <section>
+    <div class="page-label">Teacher's Role</div>
+    <h2>段階に応じて、教師の役割もシフトする</h2>
+    <div class="samr-stack" style="margin-top:0.4em;">
+      <div class="samr-row r">
+        <div class="badge">R</div>
+        <div>
+          <div class="label-jp">創造する力と社会につながる学びを育てる</div>
+          <div class="desc">教科を越え、児童の「やってみたい」を地域や社会に接続する。</div>
+        </div>
+        <div class="tag">コーチ / メンター</div>
+      </div>
+      <div class="samr-row m">
+        <div class="badge">M</div>
+        <div>
+          <div class="label-jp">主体的・対話的で深い学びを生む</div>
+          <div class="desc">学び方の選択を促し、対話と振り返りを学級文化として育てる。</div>
+        </div>
+        <div class="tag">ファシリテーター</div>
+      </div>
+      <div class="samr-row a">
+        <div class="badge">A</div>
+        <div>
+          <div class="label-jp">学習効率の向上と理解の深化を支援する</div>
+          <div class="desc">即時フィードバックや視覚化で気づきを増やす。</div>
+        </div>
+        <div class="tag">学習環境の設計者</div>
+      </div>
+      <div class="samr-row s">
+        <div class="badge">S</div>
+        <div>
+          <div class="label-jp">情報活用能力と端末リテラシーの基礎を作る</div>
+          <div class="desc">操作の不安を取り除き、「自分で使える」自信を育てる。</div>
+        </div>
+        <div class="tag">知識の提供者</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07: 各段階のチェックポイント -->
+  <section>
+    <div class="page-label">Checkpoints</div>
+    <h2>各段階の自己チェックポイント</h2>
+    <div class="samr-stack" style="margin-top:0.4em; font-size:0.95em;">
+      <div class="samr-row r">
+        <div class="badge">R</div>
+        <div>
+          <div class="label-jp">再定義</div>
+          <div class="desc">・従来の教室では不可能だった学びを実現しているか<br>・学級・学年・学校の外との接続が生まれているか<br>・「やってみたかった」に応える活動になっているか</div>
+        </div>
+        <div class="tag">Redefinition</div>
+      </div>
+      <div class="samr-row m">
+        <div class="badge">M</div>
+        <div>
+          <div class="label-jp">変容</div>
+          <div class="desc">・児童が学習ツールや方法を自分で選べるか<br>・個別最適化された学びが実現されているか<br>・友達と一緒に作る／伝え合う場面があるか</div>
+        </div>
+        <div class="tag">Modification</div>
+      </div>
+      <div class="samr-row a">
+        <div class="badge">A</div>
+        <div>
+          <div class="label-jp">増強</div>
+          <div class="desc">・デジタルならではの機能を活用しているか<br>・学習成果の即時フィードバックはあるか<br>・共有・協働の機能を取り入れているか</div>
+        </div>
+        <div class="tag">Augmentation</div>
+      </div>
+      <div class="samr-row s">
+        <div class="badge">S</div>
+        <div>
+          <div class="label-jp">代替</div>
+          <div class="desc">・紙の教材や黒板をデジタル化する目的は明確か<br>・操作の複雑さが学習の障壁になっていないか<br>・準備や採点の時間短縮に繋がっているか</div>
+        </div>
+        <div class="tag">Substitution</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08: 量的 vs 質的 -->
+  <section>
+    <div class="page-label">Why It Matters</div>
+    <h2>量的な改善から、質的な転換へ</h2>
+    <div class="grid cols-2" style="margin-top:0.4em;">
+      <div class="card" style="background:var(--samr-s-soft); border-color:transparent;">
+        <div style="font-size:0.55em; font-weight:700; letter-spacing:0.1em; color:#3F7831; margin-bottom:0.4em;">ENHANCEMENT — 強化</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">「同じことを、もっと便利に」</div>
+        <div class="desc" style="font-size:0.72em;">
+          S = 同じことを違う道具で<br>
+          A = 同じことを、もっと便利に<br><br>
+          <strong>授業の構造は変わらない。</strong>効率化と即時フィードバックが価値の源泉。
+        </div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft); border-color:transparent;">
+        <div style="font-size:0.55em; font-weight:700; letter-spacing:0.1em; color:#A63A5C; margin-bottom:0.4em;">TRANSFORMATION — 変革</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">「これまでなかった学びを生む」</div>
+        <div class="desc" style="font-size:0.72em;">
+          M = タスクの形が変わる<br>
+          R = 新しい学びが生まれる<br><br>
+          <strong>授業の構造そのものが変わる。</strong>主体性・教室外との接続・新たな価値の創造へ。
+        </div>
+      </div>
+    </div>
+    <div class="callout gold" style="margin-top:1.2em;">
+      <strong>大切なのは</strong>「常に最上位を目指す」ことではなく、<strong>その学習のねらいにとってどのレベルが最適か</strong>を戦略的に判断すること。
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 2  授業デザインの考え方                                        -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 2</span>
+    <h2>授業デザイン<br>の考え方</h2>
+    <p class="lead">「何を教えるか」「どのツールを使うか」から<br>「どんな学びを創るか」へ。</p>
+  </section>
+
+  <!-- 09: 出発点はねらい -->
+  <section>
+    <div class="page-label">Start Point</div>
+    <h2>出発点は<em>「ねらい」</em></h2>
+    <p class="lead" style="font-size:0.85em; color:var(--ink-2); margin-bottom:1.2em;">
+      「何を教えるか？」「どのツールを使うか？」から
+      <strong style="color:var(--accent);">「どんな力をつけたいか？」</strong>へ。
+    </p>
+    <div class="grid cols-3">
+      <div class="card">
+        <div class="title">コンテンツ・ツール先行から脱却</div>
+        <div class="desc">「Canvaを使ってみたい」から始まる授業設計は、ねらいを見失いやすい。</div>
+      </div>
+      <div class="card">
+        <div class="title">「資質・能力の3つの柱」から出発</div>
+        <div class="desc">知識・技能／思考力・判断力・表現力／学びに向かう力。<strong>子どもの姿</strong>でねらいを語る。</div>
+      </div>
+      <div class="card">
+        <div class="title">テクノロジーは手段</div>
+        <div class="desc">SAMRはツールの最終評価ではなく、授業の質を点検するレンズ。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10: 授業デザインのための問い -->
+  <section>
+    <div class="page-label">Design Questions</div>
+    <h2>授業デザインのための4つの問い</h2>
+    <table style="width:100%; border-collapse:separate; border-spacing:0 6px; font-size:0.62em; margin-top:0.4em;">
+      <thead>
+        <tr style="background:var(--ink); color:#fff;">
+          <th style="padding:10px 14px; text-align:left; border-radius:6px 0 0 6px; width:90px;">区分</th>
+          <th style="padding:10px 14px; text-align:left; width:80px;">レベル</th>
+          <th style="padding:10px 14px; text-align:left;">キーワード</th>
+          <th style="padding:10px 14px; text-align:left; border-radius:0 6px 6px 0;">問い</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:var(--samr-r-soft);">
+          <td rowspan="2" style="padding:14px; font-weight:800; vertical-align:middle; border-radius:6px 0 0 0;">変革</td>
+          <td style="padding:14px; font-weight:800;">R: 再定義</td>
+          <td style="padding:14px;">新しい学びが生まれる</td>
+          <td style="padding:14px;">テクノロジーがなければ不可能だったタスクは何か？</td>
+        </tr>
+        <tr style="background:var(--samr-m-soft);">
+          <td style="padding:14px; font-weight:800;">M: 変容</td>
+          <td style="padding:14px;">タスクの形が変わる</td>
+          <td style="padding:14px;">テクノロジーはタスクの再設計にどう貢献しているか？</td>
+        </tr>
+        <tr style="background:var(--samr-a-soft);">
+          <td rowspan="2" style="padding:14px; font-weight:800; vertical-align:middle; border-radius:0 0 0 6px;">強化</td>
+          <td style="padding:14px; font-weight:800;">A: 増強</td>
+          <td style="padding:14px;">同じことを、もっと便利に</td>
+          <td style="padding:14px;">テクノロジーはタスクに機能的な改善をもたらしたか？</td>
+        </tr>
+        <tr style="background:var(--samr-s-soft);">
+          <td style="padding:14px; font-weight:800;">S: 代替</td>
+          <td style="padding:14px;">同じことを、違う道具で</td>
+          <td style="padding:14px;">テクノロジーは単なる代替として使われていないか？</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 11: バックワードデザイン上段 -->
+  <section>
+    <div class="page-label">Backward Design · 1/2</div>
+    <h2>バックワードデザイン｜単元レベル</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:1em;">
+      ゴールから逆算する。<strong>「子どもがどうなっていればOKか」</strong>を先に決める。
+    </p>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><div class="body"><div class="t">学習のねらいの設定</div><div class="s">この単元で、児童に何ができるようになってほしいのか（資質・能力の3つの柱で記述）</div></div></div>
+      <div class="step"><div class="n">02</div><div class="body"><div class="t">学習成果の明確化</div><div class="s">ねらい達成を、どんな成果物・パフォーマンスで示すか</div></div></div>
+      <div class="step"><div class="n">03</div><div class="body"><div class="t">総括的評価の設定</div><div class="s">何を、どんな基準（ルーブリック）で評価するか</div></div></div>
+      <div class="step"><div class="n">04</div><div class="body"><div class="t">単元全体のプラン</div><div class="s">時数配分・主要な活動・キーアセスメントの位置づけ</div></div></div>
+    </div>
+  </section>
+
+  <!-- 12: バックワードデザイン下段 -->
+  <section>
+    <div class="page-label">Backward Design · 2/2</div>
+    <h2>バックワードデザイン｜授業レベル</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:1em;">
+      単元プランを、<strong>1コマの解像度</strong>に落としていく。
+    </p>
+    <div class="steps">
+      <div class="step"><div class="n">05</div><div class="body"><div class="t">学習者の実態把握</div><div class="s">前提知識・スキル・関心。Google Forms等で事前診断、児童の生活経験から</div></div></div>
+      <div class="step"><div class="n">06</div><div class="body"><div class="t">詳細な授業プラン</div><div class="s">活動の流れ・時間配分・教材・ICT/AIツールの選定</div></div></div>
+      <div class="step"><div class="n">07</div><div class="body"><div class="t">形成的評価の設定</div><div class="s">途中で児童のつまずきをどう拾い、どう手当てするか</div></div></div>
+      <div class="step"><div class="n">08</div><div class="body"><div class="t">授業者の振り返り</div><div class="s">うまくいった/いかなかった。学年団・専科で共有</div></div></div>
+    </div>
+  </section>
+
+  <!-- 13: Bloom -->
+  <section>
+    <div class="page-label">Bloom's Digital Taxonomy</div>
+    <h2>認知レベル × 知識タイプで「深さ」を設計</h2>
+    <div class="bloom" style="margin-top:0.6em;">
+      <div></div>
+      <div class="h shallow">Remember<br><span style="font-size:0.85em; font-weight:500;">記憶する</span></div>
+      <div class="h">Understand<br><span style="font-size:0.85em; font-weight:500;">理解する</span></div>
+      <div class="h">Apply<br><span style="font-size:0.85em; font-weight:500;">適用する</span></div>
+      <div class="h">Analyze<br><span style="font-size:0.85em; font-weight:500;">分析する</span></div>
+      <div class="h">Evaluate<br><span style="font-size:0.85em; font-weight:500;">評価する</span></div>
+      <div class="h deep">Create<br><span style="font-size:0.85em; font-weight:500;">創造する</span></div>
+
+      <div class="row-h">事実的知識</div>
+      <div class="c">用語暗記</div><div class="c">関係を説明</div><div class="c">演習で活用</div><div class="c">分類・比較</div><div class="c">妥当性判断</div><div class="c">新事例の構成</div>
+
+      <div class="row-h">概念的知識</div>
+      <div class="c">概念列挙</div><div class="c">図解・要約</div><div class="c">他文脈に適用</div><div class="c">構造分析</div><div class="c">理論の批評</div><div class="c">モデル設計</div>
+
+      <div class="row-h">手続き的知識</div>
+      <div class="c">手順記憶</div><div class="c">手順説明</div><div class="c">実演</div><div class="c">過程の分析</div><div class="c">最適化評価</div><div class="c">手順の創造</div>
+
+      <div class="row-h">メタ認知的知識</div>
+      <div class="c">自分の知識の自覚</div><div class="c">学び方の理解</div><div class="c">戦略の選択</div><div class="c">学びの分析</div><div class="c">戦略の評価</div><div class="c">学び方の再設計</div>
+    </div>
+    <div class="axis" style="display:flex; justify-content:space-between; margin-top:1em; font-size:0.55em;">
+      <span style="color:var(--samr-s); font-weight:700;">← 浅い学び</span>
+      <span style="color:var(--ink-3);">低学年は左寄り中心、学年が上がるほど右側にも挑戦できる</span>
+      <span style="color:var(--samr-r); font-weight:700;">深い学び →</span>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 3  ICT活用ルーブリック v2                                       -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 3</span>
+    <h2>ICT活用<br>ルーブリック v2</h2>
+    <p class="lead">5段階×8観点の自己診断ツール。<br>「いまどこにいるか」を、自分で言語化する。</p>
+  </section>
+
+  <!-- 14: ルーブリック全体像（5段階） -->
+  <section>
+    <div class="page-label">Rubric · Overview</div>
+    <h2>5段階で授業の現在地を測る</h2>
+    <p class="lead" style="font-size:0.72em; color:var(--ink-2); margin-bottom:0.8em;">
+      従来のSAMR4段階に <strong>「Analog（紙・物理的な教材中心）」</strong>を加えた、教員自己診断のためのバージョン。
+    </p>
+    <div class="rubric-grid" style="grid-template-columns: repeat(5, 1fr);">
+      <div class="rubric-cell" style="background:var(--samr-analog-soft);"><div class="num" style="color:#7B7059;">1</div><div class="t">Analog</div><div class="kw">紙・物理的な材料が主流。デジタル化されていない。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-s-soft);"><div class="num" style="color:#3F7831;">2</div><div class="t">Substitution</div><div class="kw">アナログ→デジタルへの置換。機能は変わらない。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-a-soft);"><div class="num" style="color:#1F7A93;">3</div><div class="t">Augmentation</div><div class="kw">効率の向上。デジタルならではの機能が加わる。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-m-soft);"><div class="num" style="color:#8A6717;">4</div><div class="t">Modify</div><div class="kw">構造の最適化。授業デザインそのものが変わる。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-r-soft);"><div class="num" style="color:#A63A5C;">5</div><div class="t">Redefinition</div><div class="kw">新しい学びの誘発。教室外との接続と価値創造。</div></div>
+    </div>
+    <div class="callout" style="margin-top:1.2em;">
+      Part 1 の SAMR は <strong>4段階のフレーム</strong>、ルーブリックは <strong>「現状はAnalog」も診断できる5段階版</strong>。同じ尺度の解像度違いと捉える。
+    </div>
+  </section>
+
+  <!-- 15: 8つの観点 -->
+  <section>
+    <div class="page-label">Rubric · 8 Perspectives</div>
+    <h2>「授業」と「児童」を、8つの観点で見る</h2>
+    <div class="grid cols-4" style="font-size:0.62em;">
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent); font-weight:700; margin-bottom:0.3em;">授業 ①</div>
+        <div class="title">情報共有・状況把握</div>
+        <div class="desc" style="font-size:0.92em;">学習の可視化／スタディ・ログ／データ活用</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent); font-weight:700; margin-bottom:0.3em;">授業 ②</div>
+        <div class="title">教材・課題の準備</div>
+        <div class="desc" style="font-size:0.92em;">個別最適化／UD／生成AI活用（教師側）</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent); font-weight:700; margin-bottom:0.3em;">授業 ③</div>
+        <div class="title">ルール作りとモラル指導</div>
+        <div class="desc" style="font-size:0.92em;">情報モラル／著作権／だれも取り残さない</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent); font-weight:700; margin-bottom:0.3em;">授業 ④</div>
+        <div class="title">授業の進行・支援</div>
+        <div class="desc" style="font-size:0.92em;">ファシリテーション／協働学習／対話的な学び</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent-2); font-weight:700; margin-bottom:0.3em;">児童 ⑤</div>
+        <div class="title">意欲・自主性</div>
+        <div class="desc" style="font-size:0.92em;">自己調整／やってみたい／自己効力感</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent-2); font-weight:700; margin-bottom:0.3em;">児童 ⑥</div>
+        <div class="title">思考の深まり</div>
+        <div class="desc" style="font-size:0.92em;">気づき／比べる／問い続ける</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent-2); font-weight:700; margin-bottom:0.3em;">児童 ⑦</div>
+        <div class="title">評価とフィードバック</div>
+        <div class="desc" style="font-size:0.92em;">形成的評価／即時フィードバック／自己評価</div>
+      </div>
+      <div class="card">
+        <div style="font-size:0.7em; color:var(--accent-2); font-weight:700; margin-bottom:0.3em;">児童 ⑧</div>
+        <div class="title">振り返りと学びの記録</div>
+        <div class="desc" style="font-size:0.92em;">ポートフォリオ／メタ認知／リフレクション</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16: 発達段階別の重点 -->
+  <section>
+    <div class="page-label">Focus by Developmental Stage</div>
+    <h2>発達段階で「効きやすい」観点は変わる</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.8em;">
+      同じツール・同じ観点でも、低・中・高学年で <strong>「ねらい」と「使い方」</strong> が変わる。
+    </p>
+    <div class="grid cols-3" style="margin-top:0.4em;">
+      <div class="card" style="background:var(--samr-s-soft); border-color:transparent;">
+        <div style="font-size:0.55em; font-weight:700; color:#3F7831; letter-spacing:0.1em; margin-bottom:0.3em;">低学年（1-2年）</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">感覚で触る／撮る・話す</div>
+        <div class="desc" style="font-size:0.7em;">
+          重点：⑤意欲・自主性／④進行・支援<br>
+          <strong>写真・音声・短い動画</strong> で表現。文字より「見せる・話す」。タイピングは無理せず。
+        </div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft); border-color:transparent;">
+        <div style="font-size:0.55em; font-weight:700; color:#1F7A93; letter-spacing:0.1em; margin-bottom:0.3em;">中学年（3-4年）</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">使い分ける／比べる</div>
+        <div class="desc" style="font-size:0.7em;">
+          重点：①情報共有／⑥思考の深まり<br>
+          <strong>Docs/Slides の共同編集</strong> や <strong>Forms 集計</strong> で「みんなの考えを見える化」。情報モラルの導入期。
+        </div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft); border-color:transparent;">
+        <div style="font-size:0.55em; font-weight:700; color:#A63A5C; letter-spacing:0.1em; margin-bottom:0.3em;">高学年（5-6年）</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">使いこなす／発信する</div>
+        <div class="desc" style="font-size:0.7em;">
+          重点：⑥思考の深まり／⑧振り返り<br>
+          <strong>Canva 動画・Sites 公開・Sheets 分析</strong>。教室外（地域・他校・専門家）と接続する学びへ。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 4  ツール俯瞰                                                  -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 4</span>
+    <h2>ICT・生成AI<br>ツールの俯瞰</h2>
+    <p class="lead">道具をまず知る。<br>次に、SAMRのどこに効くかを見極める。</p>
+  </section>
+
+  <!-- 17: ツール群の俯瞰 -->
+  <section>
+    <div class="page-label">Toolset</div>
+    <h2>本研修で扱う4つのツール群</h2>
+    <div class="grid cols-4" style="margin-top:0.4em;">
+      <div class="tool-card gws">
+        <div class="icon">G</div>
+        <div class="name">Google Workspace<br>for Education</div>
+        <div class="desc">Classroom／Docs／Slides／Sheets／Forms／Drive／Meet。学級経営と授業の基盤。</div>
+      </div>
+      <div class="tool-card canva">
+        <div class="icon">C</div>
+        <div class="name">Canva<br>for Education</div>
+        <div class="desc">スライド・動画・ポスター・ホワイトボード。児童の表現の幅を広げる。</div>
+      </div>
+      <div class="tool-card gemini">
+        <div class="icon">✦</div>
+        <div class="name">Gemini</div>
+        <div class="desc">教師の壁打ち・素案生成・教材作成。授業準備のパートナーとして。</div>
+      </div>
+      <div class="tool-card notebooklm">
+        <div class="icon">N</div>
+        <div class="name">NotebookLM</div>
+        <div class="desc">教材研究の資料を「ソース」として根拠付き要約・対話。教師の情報咀嚼器。</div>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:1.2em; font-size:0.72em;">
+      <strong>原則：</strong> Workspace と Canva は <em>「児童も使う日常の道具」</em>、Gemini と NotebookLM は <em>「教師の授業準備の道具」</em> として位置づける。
+    </div>
+  </section>
+
+  <!-- 18: ツールマップ × SAMR -->
+  <section>
+    <div class="page-label">Tool × SAMR</div>
+    <h2>どのツールが、どの段階で活きるか</h2>
+    <div class="samr-stack" style="margin-top:0.4em; font-size:0.92em;">
+      <div class="samr-row r">
+        <div class="badge">R</div>
+        <div>
+          <div class="label-jp">再定義｜教室外接続・新しい学びの創出</div>
+          <div class="desc">
+            <span class="chip accent">Sites / Meet</span> 地域・他校・専門家と接続
+            <span class="chip accent">Canva 動画</span> 発信・伝える
+            <span class="chip accent">Forms</span> アンケート・調査
+          </div>
+        </div>
+        <div class="tag">創造</div>
+      </div>
+      <div class="samr-row m">
+        <div class="badge">M</div>
+        <div>
+          <div class="label-jp">変容｜協働・個別最適</div>
+          <div class="desc">
+            <span class="chip accent">Docs/Slides 共同編集</span> みんなで作る
+            <span class="chip accent">Whiteboard</span> 考えを集める
+            <span class="chip accent">Classroom</span> 学習履歴の可視化
+          </div>
+        </div>
+        <div class="tag">協働</div>
+      </div>
+      <div class="samr-row a">
+        <div class="badge">A</div>
+        <div>
+          <div class="label-jp">増強｜即時フィードバックと多メディア化</div>
+          <div class="desc">
+            <span class="chip accent">Forms クイズ</span> 自動採点
+            <span class="chip accent">Canva</span> 多メディア教材
+            <span class="chip accent">写真・動画</span> 観察・記録
+          </div>
+        </div>
+        <div class="tag">効率化</div>
+      </div>
+      <div class="samr-row s">
+        <div class="badge">S</div>
+        <div>
+          <div class="label-jp">代替｜デジタル化の入り口</div>
+          <div class="desc">
+            <span class="chip accent">Drive 配布</span> 紙→PDF
+            <span class="chip accent">Classroom 連絡</span> プリント→投稿
+            <span class="chip accent">Slides 投影</span> 板書代替
+          </div>
+        </div>
+        <div class="tag">置換</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19: 生成AI活用の3原則（教師中心） -->
+  <section>
+    <div class="page-label">Generative AI · 3 Principles (for Teachers)</div>
+    <h2>生成AIを「使いこなす」3つの原則｜教師編</h2>
+    <div class="grid cols-3" style="margin-top:0.4em;">
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="font-size:0.55em; font-weight:700; color:var(--accent); letter-spacing:0.1em; margin-bottom:0.3em;">PRINCIPLE 01</div>
+        <div class="title" style="font-size:1.05em; margin-bottom:0.3em;">壁打ちパートナー</div>
+        <div class="desc" style="font-size:0.7em;">
+          授業の素案・問いの構造化・観点の洗い出しに使う。<br>
+          <strong>判断は人間</strong>、AIは選択肢を広げるだけ。
+        </div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="font-size:0.55em; font-weight:700; color:#8A6717; letter-spacing:0.1em; margin-bottom:0.3em;">PRINCIPLE 02</div>
+        <div class="title" style="font-size:1.05em; margin-bottom:0.3em;">差分の補助線</div>
+        <div class="desc" style="font-size:0.7em;">
+          児童一人ひとりの実態に合わせた<strong>個別の問い・難易度・例</strong>を素早く生成。<br>
+          全員一律から、複線型へ。
+        </div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft);">
+        <div style="font-size:0.55em; font-weight:700; color:#A63A5C; letter-spacing:0.1em; margin-bottom:0.3em;">PRINCIPLE 03</div>
+        <div class="title" style="font-size:1.05em; margin-bottom:0.3em;">業務効率化の相棒</div>
+        <div class="desc" style="font-size:0.7em;">
+          学級通信の素案・所見の下書き・保護者対応文案。<br>
+          <strong>「先生の時間」を子どもと向き合う時間に。</strong>
+        </div>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:1.2em; font-size:0.7em;">
+      <strong>注意</strong>：児童の名前・成績・家庭環境などの個人情報は入力しない。生成物の事実確認は必ず人間が行う。
+    </div>
+  </section>
+
+  <!-- 20: 小学校での生成AI活用（文科省ガイドラインVer.2） -->
+  <section>
+    <div class="page-label">MEXT Guideline · Ver.2</div>
+    <h2>小学校での生成AI活用｜文科省ガイドラインを踏まえて</h2>
+    <p class="lead" style="font-size:0.72em; color:var(--ink-2); margin-bottom:0.8em;">
+      2024年12月改訂「生成AIの利用に関するガイドライン Ver.2」のポイントを、小学校の文脈で読み解く。
+    </p>
+    <div class="grid cols-2" style="font-size:0.7em;">
+      <div class="card" style="background:var(--samr-s-soft); border-color:transparent;">
+        <div style="font-size:0.65em; font-weight:700; color:#3F7831; margin-bottom:0.3em;">教師の業務</div>
+        <div class="title" style="font-size:0.95em; margin-bottom:0.3em;">積極的に活用する</div>
+        <div class="desc">教材作成・問題作成・所見の素案・通信文書など、<strong>校務と授業準備の効率化</strong>に。個人情報は入力しない。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft); border-color:transparent;">
+        <div style="font-size:0.65em; font-weight:700; color:#1F7A93; margin-bottom:0.3em;">児童の直接利用</div>
+        <div class="title" style="font-size:0.95em; margin-bottom:0.3em;">基本は限定的・段階的に</div>
+        <div class="desc">多くの生成AIサービスは <strong>利用規約上の年齢制限（13歳以上等）</strong>。原則として教師の操作下で <strong>体験的・概念理解</strong> の活動を中心に。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft); border-color:transparent;">
+        <div style="font-size:0.65em; font-weight:700; color:#8A6717; margin-bottom:0.3em;">体験的な学び方</div>
+        <div class="title" style="font-size:0.95em; margin-bottom:0.3em;">「AIってなに？」を体感する</div>
+        <div class="desc">教師がAIに質問する様子を <strong>大型提示装置で見せる</strong>。AIの答えと自分の考えを <strong>比べる</strong> 活動で批判的に捉える。</div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft); border-color:transparent;">
+        <div style="font-size:0.65em; font-weight:700; color:#A63A5C; margin-bottom:0.3em;">禁止事項</div>
+        <div class="title" style="font-size:0.95em; margin-bottom:0.3em;">「丸投げ」を避ける</div>
+        <div class="desc">読書感想文・自由研究・コンクール応募作品など「自分の考え」を問う成果物への <strong>そのままの利用は不適切</strong>。プロセスを見える化する。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 5  教科別実践                                                  -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 5</span>
+    <h2>教科別実践<br>SAMR × ICT</h2>
+    <p class="lead">小学校 13カテゴリ。<br>各教科 S/A/M/R の具体例を1セットずつ。</p>
+  </section>
+
+  <!-- ====== 国語 ====== -->
+  <section>
+    <div class="page-label">Subject · 国語 · 強化（S+A）</div>
+    <h2>国語 ｜ 読む・書く・話す・聞く</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">教材本文・ワークシートを <strong>Classroom</strong> で配付。漢字・語彙テストを <strong>Forms 自動採点</strong> に。音読を <strong>動画提出</strong>。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell">Docs の <strong>音声入力</strong> で語りや作文を文字化（低学年も書きやすい）。<strong>Canva</strong> で本の紹介ポスター。<strong>Whiteboard</strong> で物語の構造を可視化。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 国語 · 変革（M+R）</div>
+    <h2>国語 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell"><strong>Docs 共同編集</strong> で物語の続きを学級で作る。<strong>Slides</strong> で互いの作文に <strong>コメント・付箋</strong> を貼って相互推敲。教師は <strong>Gemini</strong> で個別の「次の問いかけ」を生成。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">創作物語や学級新聞を <strong>Sites</strong> で公開し、他学年・保護者・地域へ届ける。<strong>Canva 動画</strong> で詩の朗読映像を制作。図書館や作家と <strong>Meet</strong> で対話。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：思考の深まり ⑥ ／ 振り返りと学びの記録 ⑧</span>
+    </div>
+  </section>
+
+  <!-- ====== 社会 ====== -->
+  <section>
+    <div class="page-label">Subject · 社会 · 強化（S+A）</div>
+    <h2>社会 ｜ 地域と日本、そして世界をつなぐ</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ（3-6年）</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">資料集・地図・年表を <strong>Slides / Drive</strong> で配付。調べ学習の記録を <strong>Docs</strong> に。プリントを <strong>Classroom</strong> で。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Google Earth / Maps</strong> で地域や日本各地を3D俯瞰。<strong>e-Stat キッズ</strong> や <strong>Sheets</strong> でデータをグラフ化。<strong>Canva</strong> で歴史人物カードや地域マップ。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 社会 · 変革（M+R）</div>
+    <h2>社会 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">教師が <strong>NotebookLM</strong> に地域資料を投入し、児童の問いに根拠付きで答える伴走者として活用。班ごとに <strong>共同編集スライド</strong> で「地域のじまん」を集める。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">地域のフィールド調査を <strong>Sites + Maps</strong> で「デジタル町探検マップ」として公開。市役所・地域団体に <strong>提案動画</strong> を届け、返事をもらう双方向の学び。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：教材・課題の準備 ② ／ 思考の深まり ⑥</span>
+    </div>
+  </section>
+
+  <!-- ====== 算数 ====== -->
+  <section>
+    <div class="page-label">Subject · 算数 · 強化（S+A）</div>
+    <h2>算数 ｜ 数・図形・量・データを操作する</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">計算ドリル・小テストを <strong>Forms</strong> 配信、自動採点。ノートを <strong>Whiteboard</strong> に。板書写真は <strong>Drive</strong> 蓄積。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>GeoGebra Math / Polypad</strong> で図形・分数・面積を視覚操作。<strong>Sheets</strong> でデータをグラフ化。<strong>カメラ</strong> で身の回りの図形を撮って共有。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 算数 · 変革（M+R）</div>
+    <h2>算数 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">児童一人ひとりの解法を <strong>写真＋Slides</strong> で共有し、班で <strong>「いいなと思った解き方」</strong> を選んで対話。教師は <strong>Gemini</strong> で個別のつまずきに合った類題を生成。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">校内・地域の調査（給食残量・登下校時間・気温など）を <strong>Sheets</strong> で分析し、グラフを <strong>Canva</strong> で発信。算数で見えた事実から学校への提案へ。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：教材・課題の準備 ② ／ 評価とフィードバック ⑦</span>
+    </div>
+  </section>
+
+  <!-- ====== 理科 ====== -->
+  <section>
+    <div class="page-label">Subject · 理科 · 強化（S+A）</div>
+    <h2>理科 ｜ 観察・実験・気づきを記録する</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ（3-6年）</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">観察記録カードを <strong>Docs</strong> に。資料集や演示実験を <strong>動画</strong> で <strong>Drive</strong> に集約。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>タブレットカメラ</strong> で観察を写真／タイムラプス。<strong>NHK for School / PhET</strong> で見えない現象を可視化。<strong>Forms</strong> で予想アンケート→結果集計。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 理科 · 変革（M+R）</div>
+    <h2>理科 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">班の実験データを <strong>Sheets</strong> で共有し「他の班と比べる」考察。観察動画を <strong>共同編集スライド</strong> に貼り、学級で気づきを集めて分類する。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">校内・地域の生物や天気を継続観測し、<strong>iNaturalist</strong> や <strong>気象庁データ</strong> と接続して市民科学に参加。<strong>Sites</strong> で「学校発・自然レポート」を発信。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：思考の深まり ⑥ ／ 情報共有・状況把握 ①</span>
+    </div>
+  </section>
+
+  <!-- ====== 生活 ====== -->
+  <section>
+    <div class="page-label">Subject · 生活 · 強化（S+A）</div>
+    <h2>生活 ｜ 体験を「とっておく」</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ（1-2年）</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">朝顔の観察カードを <strong>Classroom</strong> で配付・提出。学習記録を <strong>Drive</strong> に。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>タブレットカメラ</strong> で朝顔・町探検・生き物を写真／短い動画で記録。<strong>音声入力</strong> や絵で記録できるので <strong>「書く負担を超えて」</strong> 体験を残せる。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 生活 · 変革（M+R）</div>
+    <h2>生活 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">町探検・生き物観察を <strong>Maps</strong> にピン留め、写真を貼って学級の <strong>「町・自然マップ」</strong> を完成させる。他の班の発見を見比べる。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">町探検で出会ったお店・地域の方に <strong>Canva お礼動画</strong> を作って届ける。来年の1年生に向けた <strong>「学校紹介動画」</strong> を制作して引き継ぐ。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：意欲・自主性 ⑤ ／ 振り返りと学びの記録 ⑧</span>
+    </div>
+  </section>
+
+  <!-- ====== 音楽 ====== -->
+  <section>
+    <div class="page-label">Subject · 音楽 · 強化（S+A）</div>
+    <h2>音楽 ｜ 表現と鑑賞を楽しむ</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">楽譜・鑑賞曲を <strong>Drive</strong> に。演奏や歌唱を <strong>動画提出</strong>。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Chrome Music Lab</strong> でリズム・音色を遊ぶ。<strong>動画</strong> で自分の演奏を見直す。<strong>Forms</strong> で鑑賞の感想を集約。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 音楽 · 変革（M+R）</div>
+    <h2>音楽 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">班で <strong>Chrome Music Lab / GarageBand</strong> を使って簡単な創作（リズム合奏・効果音）。<strong>共同編集スライド</strong> に音源を貼って学級で鑑賞会。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">合唱や合奏を <strong>Canva 動画</strong> で MV 化し、保護者・地域・姉妹校に届ける。地元の演奏家と <strong>Meet</strong> でつながり、リアル × オンラインの音楽体験へ。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：意欲・自主性 ⑤ ／ 振り返りと学びの記録 ⑧</span>
+    </div>
+  </section>
+
+  <!-- ====== 図画工作 ====== -->
+  <section>
+    <div class="page-label">Subject · 図画工作 · 強化（S+A）</div>
+    <h2>図画工作 ｜ 作る・見る・つたえる</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">作品写真・参考画像を <strong>Drive</strong> に。鑑賞カードを <strong>Docs / Forms</strong> に。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Canva</strong> でデジタル下絵・配色シミュレーション。<strong>動画</strong> で制作プロセスをタイムラプス記録。鑑賞では <strong>拡大画像</strong> で「気づき」を増やす。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 図画工作 · 変革（M+R）</div>
+    <h2>図画工作 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">作品写真と「題名・込めた思い」を <strong>共同編集スライド</strong> に集め、班で <strong>相互鑑賞</strong>。コメント機能で「いいねの理由」を言葉にする。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">学級の作品を <strong>Sites</strong> でオンライン作品展に。地域の美術館や他校とコラボ展示。<strong>AR アプリ</strong> で校内に巨大作品を仮想配置するなど空間表現に挑戦。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：意欲・自主性 ⑤ ／ 思考の深まり ⑥</span>
+    </div>
+  </section>
+
+  <!-- ====== 家庭 ====== -->
+  <section>
+    <div class="page-label">Subject · 家庭 · 強化（S+A）</div>
+    <h2>家庭 ｜ 衣食住と消費を見直す</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ（5-6年）</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">調理レシピ・縫い方手順を <strong>Drive / Classroom</strong> で配付。実習記録を <strong>Docs</strong> に。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>動画</strong> で実習工程を可視化（縫い方・包丁の使い方を <strong>スロー再生</strong>）。<strong>Forms</strong> で食事調査の集計。<strong>Sheets</strong> で家庭の食費・消費を記録。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 家庭 · 変革（M+R）</div>
+    <h2>家庭 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">家庭での実践（料理・整理整頓・買い物）を <strong>写真＋スライド</strong> で持ち寄り、学級で <strong>「うちの工夫」</strong> を交換。家庭と学校の往復で学びを編む。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">地域の食・住・消費課題（食品ロス・防災備蓄）に対する <strong>提案動画</strong> を制作し、家庭・地域・自治体に届ける。SDGsと接続したプロジェクト学習へ。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：思考の深まり ⑥ ／ 意欲・自主性 ⑤</span>
+    </div>
+  </section>
+
+  <!-- ====== 体育 ====== -->
+  <section>
+    <div class="page-label">Subject · 体育 · 強化（S+A）</div>
+    <h2>体育 ｜ 動きを「見て」改善する</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">学習カードを <strong>Forms</strong> 化。記録（体力テスト・タイム）を <strong>Sheets</strong> で管理。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>遅延再生アプリ</strong> でフォームを直後に見る。<strong>スロー動画</strong> で逆上がり・跳び箱の動きを観察。<strong>Canva</strong> で作戦ボード。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 体育 · 変革（M+R）</div>
+    <h2>体育 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">班で動画を撮り、<strong>共同編集スライド</strong> に貼って「いいフォーム／改善点」を相互フィードバック。<strong>Sheets</strong> で記録の伸びを可視化し自己評価。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">地域のスポーツチーム・選手と <strong>Meet</strong> で交流。学級独自の <strong>新スポーツ</strong> をルールごと考案し、他クラス・他校と <strong>動画交流戦</strong>。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：評価とフィードバック ⑦ ／ 振り返りと学びの記録 ⑧</span>
+    </div>
+  </section>
+
+  <!-- ====== 外国語（活動・科目） ====== -->
+  <section>
+    <div class="page-label">Subject · 外国語 · 強化（S+A）</div>
+    <h2>外国語 ｜ 聞く・話す・読む・書くを楽しむ</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ（外国語活動3-4年・教科5-6年）</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">単語カード・絵カードを <strong>Slides / Drive</strong> に。発音モデルを <strong>動画</strong> で配信。<strong>Forms</strong> でリスニング小テスト。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Docs 音声入力</strong> や読み上げ機能で発音練習。<strong>Canva</strong> で自己紹介スライド／町紹介ポスター。<strong>Whiteboard</strong> で語彙マップを協働作成。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 外国語 · 変革（M+R）</div>
+    <h2>外国語 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">教師の <strong>Gemini</strong> 活用でロールプレイの相手役を生成し、児童が安全に「やり取り」を練習。<strong>共同編集スライド</strong> で学級の英語紹介集を作る。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">海外校・国内ALT母国の小学校と <strong>Meet</strong> で同期型ジョイントレッスン。<strong>Canva 動画</strong> で「My Town」を制作し、世界に発信して感想をもらう。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：授業の進行・支援 ④ ／ 意欲・自主性 ⑤</span>
+    </div>
+  </section>
+
+  <!-- ====== 道徳 ====== -->
+  <section>
+    <div class="page-label">Subject · 道徳 · 強化（S+A）</div>
+    <h2>道徳 ｜ 多面的・多角的に考える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">教材文・ワークシートを <strong>Classroom</strong> 配付、振り返りを <strong>Docs / Forms</strong> 提出。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Forms</strong> で授業冒頭に立場アンケートを取り <strong>リアルタイム集計</strong> を共有。<strong>Whiteboard</strong> で「友達の考え」を付箋で集める。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 道徳 · 変革（M+R）</div>
+    <h2>道徳 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">立場の異なる児童の意見を <strong>共同編集スライド</strong> で並べ、「自分とちがう考え」と対話。<strong>1年間の振り返り</strong> を <strong>ポートフォリオ</strong> として蓄積し成長を実感。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">学級で決めた「ありたい姿」を <strong>Canva ステートメント動画</strong> で発信。学校全体や保護者と価値観を共有。卒業時に <strong>6年間のポートフォリオ</strong> を編集。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：意欲・自主性 ⑤ ／ 振り返りと学びの記録 ⑧</span>
+    </div>
+  </section>
+
+  <!-- ====== 総合的な学習の時間 ====== -->
+  <section>
+    <div class="page-label">Subject · 総合 · 強化（S+A）</div>
+    <h2>総合的な学習の時間 ｜ 探究の足場</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ（3-6年）</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">探究ノートを <strong>Docs</strong> に。中間発表資料を <strong>Slides</strong> で。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Forms</strong> で校内・地域アンケート、<strong>Sheets</strong> で集計可視化。<strong>Canva</strong> でポスター・チラシ・短編動画。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 総合 · 変革（M+R）</div>
+    <h2>総合 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">教師が <strong>NotebookLM</strong> に地域資料を投入し、児童の探究を伴走。<strong>Gemini</strong> でロールプレイを通じて関係者（行政・住民・専門家）の視点を仮想ヒアリング。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell"><strong>Sites / Canva 動画</strong> で探究成果を地域・自治体・企業に直接提案。<strong>Meet</strong> で校外の専門家と継続的につながる。卒業生・在校生・地域を巻き込む発信プロジェクトへ。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：思考の深まり ⑥ ／ 意欲・自主性 ⑤</span>
+    </div>
+  </section>
+
+  <!-- ====== 特別活動 ====== -->
+  <section>
+    <div class="page-label">Subject · 特別活動 · 強化（S+A）</div>
+    <h2>特別活動 ｜ 学級・学校・自分をつなぐ</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「同じ授業を、より便利に」 — 量的な改善のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level s">S 代替</div>
+      <div class="cell">学級会の議題・係活動の記録を <strong>Classroom / Docs</strong> に。給食・清掃の振り返りを <strong>Forms</strong> に。</div>
+      <div class="level a">A 増強</div>
+      <div class="cell"><strong>Forms</strong> で学級アンケート・係活動の振り返りを集約。<strong>Whiteboard</strong> で学級会の意見を可視化。<strong>Sheets</strong> で目標達成度を見える化。</div>
+    </div>
+  </section>
+  <section>
+    <div class="page-label">Subject · 特別活動 · 変革（M+R）</div>
+    <h2>特別活動 ｜ 学びの構造を変える</h2>
+    <p class="lead" style="font-size:0.78em; color:var(--ink-2); margin-bottom:0.7em;">「これまでなかった学びを生む」 — 質的な転換のフェーズ</p>
+    <div class="subject-grid">
+      <div class="level m">M 変容</div>
+      <div class="cell">学級会の議題を <strong>共同編集スライド</strong> で事前検討（全員参加で意見が出やすい）。係活動の成果を <strong>Sites / Canva</strong> で学級内外に発信。</div>
+      <div class="level r">R 再定義</div>
+      <div class="cell">児童会・委員会の活動を <strong>校内ポータル（Sites）</strong> で運営。<strong>Meet</strong> で他校の児童会と交流。卒業を <strong>動画アルバム</strong> で残し、後輩や保護者へ届ける。</div>
+    </div>
+    <div style="margin-top:0.7em;">
+      <span class="rubric-tag">ルーブリック対応：意欲・自主性 ⑤ ／ 振り返りと学びの記録 ⑧</span>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 6  Closing                                                     -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 6</span>
+    <h2>明日からの<br>解像度を上げる</h2>
+    <p class="lead">研修を「持ち帰る」ための3つの軸。</p>
+  </section>
+
+  <!-- 持ち帰ってほしい3つのこと -->
+  <section>
+    <div class="page-label">Take-Aways</div>
+    <h2>持ち帰ってほしい3つのこと</h2>
+    <div class="grid cols-3" style="margin-top:0.4em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="font-size:0.55em; font-weight:700; color:#3F7831; letter-spacing:0.1em; margin-bottom:0.3em;">TAKE 01</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">ツールから始めない</div>
+        <div class="desc" style="font-size:0.7em;">出発点は「ねらい」と「資質・能力の3つの柱」。SAMRはツール評価ではなく、<strong>授業の質を点検するレンズ</strong>。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="font-size:0.55em; font-weight:700; color:#1F7A93; letter-spacing:0.1em; margin-bottom:0.3em;">TAKE 02</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">発達段階に合わせる</div>
+        <div class="desc" style="font-size:0.7em;">SAMRは梯子ではなくスペクトル。<strong>低・中・高学年</strong>で最適レベルを選ぶ。</div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft);">
+        <div style="font-size:0.55em; font-weight:700; color:#A63A5C; letter-spacing:0.1em; margin-bottom:0.3em;">TAKE 03</div>
+        <div class="title" style="font-size:1.0em; margin-bottom:0.3em;">学年団・専科で+1</div>
+        <div class="desc" style="font-size:0.7em;">ルーブリックの<strong>1観点だけ</strong>、次の単元で1段階上げる。<strong>同じ学年・同じ単元</strong>で進捗を共有する。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- スモールステップ -->
+  <section>
+    <div class="page-label">Small Steps</div>
+    <h2>明日からの「+1」スモールステップ</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="n">M</div>
+        <div class="body">
+          <div class="t">月｜<strong>1観点</strong>を選ぶ（自己診断ワークの結果から）</div>
+          <div class="s">迷ったら「意欲・自主性 ⑤」または「振り返りと学びの記録 ⑧」がおすすめ。学級経営との相乗効果が大きい。</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">T</div>
+        <div class="body">
+          <div class="t">火〜木｜<strong>1単元</strong>に小さく組み込む</div>
+          <div class="s">Forms で立場アンケート／Slides で共同編集／写真・動画で観察記録／Gemini で個別の問いを生成（教師が）。</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">F</div>
+        <div class="body">
+          <div class="t">金｜<strong>学年団・専科</strong>と振り返る</div>
+          <div class="s">うまくいった点・つまずいた点を5分共有。<strong>同じ学年・同じ単元</strong>で経験を交換する。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 参考資料 -->
+  <section>
+    <div class="page-label">Resources</div>
+    <h2>参考資料・お問い合わせ</h2>
+    <div class="grid cols-2" style="margin-top:0.4em;">
+      <div class="card">
+        <div class="title">研修内資料</div>
+        <div class="desc" style="font-size:0.72em; line-height:1.7;">
+          ・SAMRモデル ガイドブック<br>
+          ・ICT活用ルーブリック v2（Spreadsheet）<br>
+          ・本スライド一式（GitHub Pages）
+        </div>
+      </div>
+      <div class="card">
+        <div class="title">主要参考</div>
+        <div class="desc" style="font-size:0.72em; line-height:1.7;">
+          ・Puentedura, R. (2006) <em>SAMR Model</em><br>
+          ・Mishra & Koehler (2006) <em>TPACK</em><br>
+          ・Wiggins & McTighe <em>Understanding by Design</em><br>
+          ・文部科学省 GIGAスクール構想／小学校学習指導要領／<br>
+          　生成AIの利用に関するガイドライン Ver.2 (2024)
+        </div>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:1.2em; font-size:0.78em;">
+      <strong>Thank you.</strong>　次の単元で、ルーブリックの「1観点 +1」 をぜひお試しください。
+    </div>
+  </section>
+
+  </div><!-- /.slides -->
+</div><!-- /.reveal -->
+
+<div class="brand">Transforming the Learning <span class="dot">●</span> 小学校 ｜ 授業デザインの解像度を上げる</div>
+
+<!-- Reveal.js scripts -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
