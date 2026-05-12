@@ -85,8 +85,8 @@
   <!-- 04: アジェンダ -->
   <section>
     <div class="page-label">Agenda · 本日の流れ</div>
-    <h2>研修の6パート</h2>
-    <div class="grid cols-3" style="margin-top:0.4em;">
+    <h2>研修の7パート</h2>
+    <div class="grid cols-4" style="margin-top:0.4em; font-size:0.85em;">
       <div class="card">
         <div class="title">1. SAMRモデルの基礎</div>
         <div class="desc">4段階のスペクトル／教師の役割／チェックポイント</div>
@@ -104,11 +104,15 @@
         <div class="desc">Google Workspace · Canva · Gemini · NotebookLM</div>
       </div>
       <div class="card">
-        <div class="title">5. 教科別実践</div>
+        <div class="title">5. 教科別実践 SAMR×ICT</div>
         <div class="desc">小学校 13カテゴリのSAMR各段階の具体例</div>
       </div>
       <div class="card">
-        <div class="title">6. 明日から</div>
+        <div class="title">6. 教科別実践 SAMR×生成AI</div>
+        <div class="desc">AIASレベル × Slow AI で授業に組み込む</div>
+      </div>
+      <div class="card">
+        <div class="title">7. 明日から</div>
         <div class="desc">スモールステップ／持ち帰り／参考資料</div>
       </div>
     </div>
@@ -1076,11 +1080,555 @@
   </section>
 
   <!-- ================================================================== -->
-  <!-- Part 6  Closing                                                     -->
+  <!-- Part 6  教科別実践 SAMR × 生成AI × AIAS                              -->
   <!-- ================================================================== -->
 
   <section class="divider">
     <span class="part-tag">Part 6</span>
+    <h2>教科別実践<br>SAMR × 生成AI</h2>
+    <p class="lead">AIAS（AI Assessment Scale）でレベルを選び、<br>Slow AI で思考の深さを設計する。</p>
+  </section>
+
+  <!-- Frame 1: AIAS 5レベル -->
+  <section>
+    <div class="page-label">AIAS · AI Assessment Scale</div>
+    <h2>AIAS｜5段階で「どこまでAIに任せるか」を決める</h2>
+    <p class="lead" style="font-size:0.72em; color:var(--ink-2); margin-bottom:0.8em;">
+      Perkins et al. (2024) によるフレーム。<strong>禁止 / 許可の二元論を超えて</strong>、活動ごとにAI関与度を意図的に設計する。
+    </p>
+    <div class="rubric-grid" style="grid-template-columns: repeat(5, 1fr);">
+      <div class="rubric-cell" style="background:var(--samr-analog-soft);"><div class="num" style="color:#7B7059;">1</div><div class="t">No AI</div><div class="kw">AIなし。自分の力だけで取り組む。基礎・体験・記憶の定着に。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-s-soft);"><div class="num" style="color:#3F7831;">2</div><div class="t">Planning</div><div class="kw">準備・調べ学習までAI使用。<strong>仕上げは自力</strong>。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-a-soft);"><div class="num" style="color:#1F7A93;">3</div><div class="t">Collaboration</div><div class="kw">下書き・推敲・FBにAI使用。<strong>批判的評価と修正</strong>を必須に。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-m-soft);"><div class="num" style="color:#8A6717;">4</div><div class="t">Full AI</div><div class="kw">任意の要素でAI使用可。<strong>AIへの指示</strong>に焦点が移る。</div></div>
+      <div class="rubric-cell" style="background:var(--samr-r-soft);"><div class="num" style="color:#A63A5C;">5</div><div class="t">Exploration</div><div class="kw">教師と評価を共同設計。<strong>新しいAI活用を創造</strong>する。</div></div>
+    </div>
+    <div class="callout" style="margin-top:1.2em; font-size:0.72em;">
+      <strong>小学校でのポイント：</strong> <strong>L1（AIなし）の体験時間を必ず確保</strong>する。低学年ほどL2-L3の操作は教師が代理し、児童はAIの出力と自分の体験を比べる活動を中心に。
+    </div>
+  </section>
+
+  <!-- Frame 2: Slow AI × AIAS -->
+  <section>
+    <div class="page-label">Slow AI × AIAS</div>
+    <h2>Slow AI｜<em>思考の摩擦</em>を設計する4原則</h2>
+    <p class="lead" style="font-size:0.72em; color:var(--ink-2); margin-bottom:0.8em;">
+      「Fast AI = 答えの丸投げ」を避け、<strong>あえて学習に「望ましい困難」</strong>を組み込む。AIASのレベル選択と組み合わせて使う。
+    </p>
+    <div class="grid cols-4" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="font-size:0.7em; color:#3F7831; font-weight:800; margin-bottom:0.3em;">S</div>
+        <div class="title" style="font-size:1.0em;">Scaffolding</div>
+        <div class="desc" style="font-size:0.95em;">ソクラテス的足場かけ。<strong>答えを教えない</strong> 設定で問い返させる。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="font-size:0.7em; color:#1F7A93; font-weight:800; margin-bottom:0.3em;">L</div>
+        <div class="title" style="font-size:1.0em;">Lingering &amp; Lateral</div>
+        <div class="desc" style="font-size:0.95em;">意図的な滞留と多角化。<strong>「他にどんな？」</strong> を問い続ける。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="font-size:0.7em; color:#8A6717; font-weight:800; margin-bottom:0.3em;">O</div>
+        <div class="title" style="font-size:1.0em;">Output Before AI</div>
+        <div class="desc" style="font-size:0.95em;">AIの前に自分の出力。<strong>絵・予想・自分の言葉を先に</strong> 残す。</div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft);">
+        <div style="font-size:0.7em; color:#A63A5C; font-weight:800; margin-bottom:0.3em;">W</div>
+        <div class="title" style="font-size:1.0em;">Wrestling</div>
+        <div class="desc" style="font-size:0.95em;">悪魔の代弁者と生産的葛藤。<strong>「反対の人」</strong> を演じさせる。</div>
+      </div>
+    </div>
+    <div class="callout gold" style="margin-top:1.1em; font-size:0.7em;">
+      <strong>3つのガードレール：</strong> ①プロセスを評価のメインに　②AIなしでの独力解決を必ず確認　③メタ認知のモニタリングを定期的に。
+    </div>
+  </section>
+
+  <!-- ====== 国語 ====== -->
+  <section>
+    <div class="page-label">Subject · 国語 · 生成AI × AIAS</div>
+    <h2>国語 ｜ 読む・書く・話す・聞くを<em>深める</em></h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">AIに「丸投げ」せず、児童の言葉を残す4つの組み合わせ。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">物語のあらすじや作文を <strong>自分で書いた</strong> 後、Gemini に「別の続き」「別の言い方」を問い、比べる。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「変なところを質問で教えて」</strong> と指示。答えを直接書かせず、児童が自分で気づくループを作る。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[L] 滞留・多角化</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>教師がNotebookLM</strong> に複数の物語を入れ、児童に「同じ場面で違う気持ち」を比べる材料を提示する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「読書感想パートナーGem」</strong> を高学年向けに構築。問い返しだけで児童に語らせる設計。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 社会 ====== -->
+  <section>
+    <div class="page-label">Subject · 社会 · 生成AI × AIAS</div>
+    <h2>社会 ｜ 地域と日本を<em>多角的に</em>見る</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">3-6年で、地域や歴史を AI と一緒に深める4つの組み合わせ。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">町探検で気づいたことを <strong>自分で記録</strong> した後、Gemini に「他に注目するといいところは？」を問う。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「市役所の人」「お店の人」</strong> を演じさせ、児童が自分の意見をぶつけて視点を広げる。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[L] 滞留・多角化</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>教師がNotebookLM</strong> に地域資料を入れ、児童の質問に根拠付きで答える伴走者として活用する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「地域博士Gem」</strong> を高学年で活用し、調べ学習を <strong>問い返し中心</strong> で深める。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 算数 ====== -->
+  <section>
+    <div class="page-label">Subject · 算数 · 生成AI × AIAS</div>
+    <h2>算数 ｜ <em>自分で考える力</em>を保ちながら拡張する</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">「答えだけ聞く」を避けるため L1 を必ず混ぜる4つの組み合わせ。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">毎時間の冒頭に <strong>AIなしで別の解き方を考える</strong> 時間を確保。自力でつまずく経験を蓄積する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">自分の解き方を写真／文字で書いた後、Gemini に <strong>「他の解き方」</strong> を問い、選んで使い分ける。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「答えは教えない約束」</strong> をプロンプトに入れる。ヒントだけもらって自分で解き切る。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「算数コーチGem」</strong> を構築。児童のつまずきパターンを覚えさせ、類題と段階的ヒントを生成。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 理科 ====== -->
+  <section>
+    <div class="page-label">Subject · 理科 · 生成AI × AIAS</div>
+    <h2>理科 ｜ 予想 → 観察 → 確かめる の<em>サイクル</em>を強くする</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">3-6年で、実験前と実験後の思考に AI を使う4つの組み合わせ。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">実験前に <strong>自分の予想</strong> を書いてから、Gemini に「他の予想」を問う。自分の予想の理由を考え直す。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「他にどんな実験ができる？」</strong> を提案させ、自分の実験の不足を考える材料にする。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[L] 滞留・多角化</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>教師がNotebookLM</strong> に観察データを入れ、児童に「いつもと違うところ」を見つけさせる活動を設計。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「観察パートナーGem」</strong> で気づきを言葉にする練習を伴走させる。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 生活 ====== -->
+  <section>
+    <div class="page-label">Subject · 生活 · 生成AI × AIAS</div>
+    <h2>生活 ｜ <em>体験を残す</em>道具として、慎重に</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">1-2年。AIは <strong>教師の代理操作</strong> が基本。L1の体験時間を必ず確保。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>自分の目で見て、手で触る</strong> 時間を必ず確保。AIは「見たことのない子の代わり」にしない。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">観察を <strong>絵で記録</strong> した後、<strong>教師がGemini</strong> に「他の見方」を問い、児童に投げかける。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">教師がGeminiに <strong>ヒント役</strong> を演じさせ、児童に「もし◯◯だったら？」と問いかける構造を設計。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「町探検案内人Gem」</strong> を教師が運用し、児童の発見を整理・分類する活動の伴走者として使う。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 音楽 ====== -->
+  <section>
+    <div class="page-label">Subject · 音楽 · 生成AI × AIAS</div>
+    <h2>音楽 ｜ 聴く・つくる・歌うを<em>言葉にする</em></h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">「AIで作って終わり」を避け、感じる時間を残す4つの組み合わせ。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">AIを使わず <strong>ただ音楽を聴いて感じる</strong> 時間を必ず取る。歌う・演奏する身体感覚を大切にする。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">好きな音楽の <strong>特徴を自分の言葉で書いた</strong> 後、Gemini に「別の聴き方」を問う。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「他の楽器ならどう聴こえる？」「他の国ではどう演奏される？」</strong> を問い、視野を広げる。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「音楽探検パートナーGem」</strong> で鑑賞・創作の言葉化を伴走させる（高学年）。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 図画工作 ====== -->
+  <section>
+    <div class="page-label">Subject · 図画工作 · 生成AI × AIAS</div>
+    <h2>図画工作 ｜ <em>手で作る</em>体験を AI で奪わない</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">L1 を中心に、AIは「あとから振り返る」道具として。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">AIを使わず <strong>自分の手で作る</strong> 時間を必ず確保。素材との対話を大切にする。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">「<strong>作りたい気持ち</strong>」を言葉にしてから、Gemini に「別の表現」を問う。意図を起点に。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「他にどんな工夫が？」</strong> を質問形式で問い続けさせ、児童の発想を広げる。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「美術コーチGem」</strong> で作品の意味を言葉にする対話（高学年）。<strong>L1の制作時間と分離</strong> する。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 家庭 ====== -->
+  <section>
+    <div class="page-label">Subject · 家庭 · 生成AI × AIAS</div>
+    <h2>家庭 ｜ 衣食住と消費を<em>見直す</em></h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">5-6年。家庭との往復に AI を組み込む4つの組み合わせ。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">家での実践（料理／整理）を <strong>写真と言葉で記録</strong> した後、Gemini に「他の工夫は？」を問う。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に家庭の食事・消費を <strong>「環境視点・栄養視点」</strong> で批判的に分析させ、自分の家を見直す。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[L] 滞留・多角化</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>教師がNotebookLM</strong> に食・住の資料を入れ、児童の探究を伴走。SDGs と接続する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「家庭探検Gem」</strong> で家庭の日常を見直すリフレクションを継続的に。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 体育 ====== -->
+  <section>
+    <div class="page-label">Subject · 体育 · 生成AI × AIAS</div>
+    <h2>体育 ｜ <em>動く体験</em>を AI で奪わない</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">L1 で動き、その後に AI で振り返る順序を守る。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">AIを使わず、ただ <strong>動いて、体感する</strong> 時間を大切に。先に身体経験を蓄積する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">動画で自分のフォームを見た後、<strong>「自分の改善点」を言葉に</strong> してから Gemini に「他の改善視点」を問う。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「他のチームならどう戦う？」</strong> を問い、自分たちの作戦を比較・修正する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「運動コーチGem」</strong> で習慣化を伴走（高学年）。データで自分の成長を実感する。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 外国語 ====== -->
+  <section>
+    <div class="page-label">Subject · 外国語 · 生成AI × AIAS</div>
+    <h2>外国語 ｜ <em>使ってみる</em>勇気を AI で支える</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">3-6年。心理的安全性のある相手として AI を活用する。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>自分が話したい英語</strong> を考えた後、Gemini に「他の言い方」を問い、選んで使い分ける。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「外国の友達」役</strong> を演じさせ、児童が <strong>間違いを気にせず</strong> 話す練習をする。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[L] 滞留・多角化</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>教師がNotebookLM</strong> に多文化の生活記事を入れ、児童に「自分の街と同じ／違う」を比べる活動を提示。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「英語パートナーGem」</strong> で会話を続ける練習（高学年）。問い返しで間違いに気づかせる設計。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 道徳 ====== -->
+  <section>
+    <div class="page-label">Subject · 道徳 · 生成AI × AIAS</div>
+    <h2>道徳 ｜ 「もう一つの見方」を<em>体験する</em></h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">直接対話の時間を残し、AIは <strong>視点の拡張</strong> に使う。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">AIなしで <strong>友達と直接話す</strong> 時間を必ず確保。生身の声・表情から学ぶ。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>自分の判断</strong> を書いた後、Gemini に「別の立場の人ならどう考える？」を問う。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「反対の立場」</strong> を演じさせ、自分の判断の前提を考え直す。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「異文化の友達Gem」</strong> で異なる価値観との対話を体験する（高学年）。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 総合 ====== -->
+  <section>
+    <div class="page-label">Subject · 総合 · 生成AI × AIAS</div>
+    <h2>総合的な学習の時間 ｜ 探究を<em>本気で</em>磨く</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">3-6年。問い・調査・発信に AI を組み込む。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">探究の <strong>問いを自分で書いた</strong> 後、Gemini に「別の問い方」を問い、問いを磨く。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>自分の探究の弱いところ</strong> を指摘させ、調べ方を見直す。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[L] 滞留・多角化</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>教師がNotebookLM</strong> に調査資料を投入し、関係者の視点を仮想ヒアリングで整理する。</div>
+      </div>
+      <div class="card" style="background:var(--samr-r-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#A63A5C; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L5 · Exploration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">地域・専門家との <strong>協働発信プロジェクト</strong> を AI 伴走で共同設計。AIの提案と専門家の声を児童が統合する。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 特別活動 ====== -->
+  <section>
+    <div class="page-label">Subject · 特別活動 · 生成AI × AIAS</div>
+    <h2>特別活動 ｜ 学級づくりに AI を<em>そっと</em>活かす</h2>
+    <p class="lead" style="font-size:0.7em; color:var(--ink-2); margin-bottom:0.5em;">直接対話を中心に、AIは「アイデアの引き出し」として。</p>
+    <div class="grid cols-2" style="font-size:0.62em;">
+      <div class="card" style="background:var(--samr-analog-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#7B7059; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L1 · No AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">学級会では <strong>必ず直接対話</strong> する時間を確保。AIは決定の前後の整理に限定。</div>
+      </div>
+      <div class="card" style="background:var(--samr-s-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#3F7831; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L2 · Planning</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[O] AI前に思考</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">議題について <strong>自分の考え</strong> を書いた後、Gemini に「他の意見」を問う。事前準備の質を上げる。</div>
+      </div>
+      <div class="card" style="background:var(--samr-a-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#1F7A93; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L3 · Collaboration</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[W] 生産的葛藤</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;">Gemini に <strong>「もし反対の人ならどう感じる？」</strong> を演じさせ、自分たちの決定の影響を考え直す。</div>
+      </div>
+      <div class="card" style="background:var(--samr-m-soft);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4em;">
+          <span style="background:#8A6717; color:#fff; padding:2px 9px; border-radius:4px; font-weight:800; font-size:0.95em;">L4 · Full AI</span>
+          <span style="color:var(--ink-3); font-weight:700; font-size:0.82em;">[S] 足場かけ</span>
+        </div>
+        <div class="desc" style="font-size:0.95em;"><strong>「学級づくりパートナーGem」</strong> で運営アイデアを練る（児童会・委員会）。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- Part 7  Closing                                                     -->
+  <!-- ================================================================== -->
+
+  <section class="divider">
+    <span class="part-tag">Part 7</span>
     <h2>明日からの<br>解像度を上げる</h2>
     <p class="lead">研修を「持ち帰る」ための3つの軸。</p>
   </section>
@@ -1156,6 +1704,8 @@
           ・Puentedura, R. (2006) <em>SAMR Model</em><br>
           ・Mishra & Koehler (2006) <em>TPACK</em><br>
           ・Wiggins & McTighe <em>Understanding by Design</em><br>
+          ・Perkins et al. (2024) <em>AI Assessment Scale (AIAS) v2</em><br>
+          ・OECD (2026) Digital Education Outlook ｜ Fast/Slow AI<br>
           ・文部科学省 GIGAスクール構想／小学校学習指導要領／<br>
           　生成AIの利用に関するガイドライン Ver.2 (2024)
         </div>
